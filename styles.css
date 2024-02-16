@@ -1,17 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
 
 :root {
-	font-size: 10px;
+    font-size: 10px;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	background-color: #fafafa;
+    background-color: #fafafa;
     font-family: "Montserrat", Arial, sans-serif;
     margin: 0;
 }
@@ -23,113 +23,106 @@ a {
     color: inherit;
     padding-right: 30px;
     font-size: 1.5rem;
-  }
+}
 
-  a:hover {
+a:hover {
     color: gray;
-  }
+}
 
-  .header {
+.header {
     position: fixed;
     left: 0;
     right: 0;
     padding: 20px;
-    top:0;
+    top: 0;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: pink;
+}
 
-
-
-                flex-direction: row;
-            justify-content: center;
-                    background-color: pink;
-  }
-
-  .container {
-	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
 }
 
 .heading, .info {
-	font-size: 4rem;
-	font-weight: 500;
-	        line-height: 1.5;
-	text-align: center;
-	padding: 5rem 0;
-	color: #1a1a1a;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    padding: 5rem 0;
+    color: #1a1a1a;
 }
 
 .heading span {
-	display: block;
+    display: block;
 }
 
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
 }
 
 .gallery-item-1 {
-	flex: 1 0 24rem;
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+    flex: 1 0 24rem;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .gallery-item-1 {
-	flex: 1 0 24rem;
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+    flex: 1 0 24rem;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .gallery-item-2 {
-	flex: 1 0 24rem;
-
-
-
-
+    flex: 1 0 24rem;
     margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .gallery-item-3 {
-	flex: 1 0 24rem;
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+    flex: 1 0 24rem;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .gallery-item-4 {
-	flex: 1 0 24rem;
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+    flex: 1 0 24rem;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .gallery-item-5 {
-	flex: 1 0 24rem;
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+    flex: 1 0 24rem;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .gallery-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 400ms ease-out;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
 }
 
 .gallery-image:hover {
-	transform: scale(1.15);
+    transform: scale(1.15);
 }
 
 .info {
-	font-size: 2rem;
+    font-size: 2rem;
 }
 
 /*
@@ -141,37 +134,35 @@ Remove or comment-out the code block below to see how the browser will fall-back
 */
 
 @supports (display: grid) {
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-		grid-gap: 2rem;
-	}
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        grid-gap: 2rem;
+    }
 
-	.gallery,
-	.gallery-item {
-		margin: 0;
-	}
+    .gallery,
+    .gallery-item {
+        margin: 0;
+    }
 }
 
-  /* footer  */
+/* footer  */
 .footer {
-    width: 80vw;
+    width: 100vw;
     background-color: #070617;
-  }
-                    .footer .col {
-                        width: 190px;
-                        height: auto;
+}
 
+.footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+}
 
-
-
-                                    float: left;
-                                    box-sizing: border-box;
-                        -webkit-box-sizing: border-box;
-                        -moz-box-sizing: border-box;
-                        padding: 0px 20px 20px 20px;
-                    }
-  .footer .col h3 {
+.footer .col h3 {
     margin: 0;
     padding: 0;
     font-family: inherit;
@@ -182,76 +173,90 @@ Remove or comment-out the code block below to see how the browser will fall-back
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.250em;
-  }
-  .footer .col ul {
+}
+
+.footer .col ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  .footer .col ul li {
+}
+
+.footer .col ul li {
     color: #999999;
-                font-size: 14px;
-                font-family: inherit;
-                font-weight: bold;
-                padding: 5px 0px 5px 0px;
-                cursor: pointer;
-                transition: .2s;
-                -webkit-transition: .2s;
-                -moz-transition: .2s;
-            }
-  .social ul li {
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+}
+
+.social ul li {
     display: inline-block;
     padding-right: 5px !important;
-  }
+}
 
-  .footer .col ul li:hover {
+.footer .col ul li:hover {
     color: #ffffff;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
-  }
-  .clearfix {
+}
+
+.clearfix {
     clear: both;
-  }
-  @media only screen and (min-width: 1280px) {
+}
+
+@media only screen and (min-width: 1280px) {
     .contain {
-      width: 1200px;
-      margin: 0 auto;
+        width: 1200px;
+        margin: 0 auto;
     }
-  }
-  @media only screen and (max-width: 1139px) {
+}
+
+@media only screen and (max-width: 1139px) {
     .contain .social {
-      width: 1000px;
-      display: block;
+        width: 1000px;
+        display: block;
     }
+
     .social h1 {
-      margin: 0px;
+        margin: 0px;
     }
-  }
-  @media only screen and (max-width: 950px) {
+}
+
+@media only screen and (max-width: 950px) {
     .footer .col {
-      width: 33%;
+        width: 33%;
     }
+
     .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-      .footer .col {
-        width: 50%;
-      }
-      .footer .col h1 {
         font-size: 14px;
-      }
-      .footer .col ul li {
-        font-size: 13px;
-      }
-  }
-  @media only screen and (max-width: 340px) {
-    .footer .col {
-      width: 100%;
     }
-  }
+
+    .footer .col ul li {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer .col {
+        width: 50%;
+    }
+
+    .footer .col h1 {
+        font-size: 14px;
+    }
+
+    .footer .col ul li {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .footer .col {
+        width: 100%;
+    }
+}
